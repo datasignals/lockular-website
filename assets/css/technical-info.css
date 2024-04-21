@@ -1,6 +1,5 @@
 #t-technical-info{
-    padding: 75px 0;
-    padding-bottom: 120px;
+    padding: 50px 0;
 }
 .t-content-container{
     padding: 50px;
@@ -40,8 +39,7 @@
 
 @media (max-width: 540px){
     #t-technical-info{
-        padding: 30px 0;
-        padding-bottom: 80px;
+        padding: 20px 0;
     }
     .t-content-container{
         padding: 20px;

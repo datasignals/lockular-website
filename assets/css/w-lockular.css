@@ -95,6 +95,12 @@
   }
 
   @media (max-width: 540px){
+    .w-row .col-md-6{
+        padding-right: 0;
+    }
+    .w-content{
+        padding: 20px 0;
+    }
     .w-info-panel{
         height: 400px;
     }
