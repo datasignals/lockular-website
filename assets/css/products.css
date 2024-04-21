@@ -1,0 +1,34 @@
+#p-products{
+    padding:75px 0;
+}
+.p-card{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #323232;
+    height: 100%;
+}
+.p-card h5{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.p-card p{
+    font-size: 12px;
+    text-align: center;
+    flex: 1;
+}
+.p-card-btn{
+    background-color: transparent;
+    border: 1px solid #F09937;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #F09937;
+    margin-top: 30px;
+    width: 120px;
+}
+.p-card-img{
+    width:120px;
+    margin-bottom: 20px;
+}
