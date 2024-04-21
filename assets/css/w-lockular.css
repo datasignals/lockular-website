@@ -9,6 +9,9 @@
 .w-content{
     padding: 50px 0;
 }
+.w-card{
+    cursor: pointer;
+}
 .w-info-panel{
     position: fixed;
     top: 100px;
@@ -67,6 +70,7 @@
         top: unset;
         bottom: 60px;
         height: auto;
+        display: none;
     }
     .w-card-info{
         display:flex;

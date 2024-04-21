@@ -9,6 +9,6 @@ slides.forEach(slide => {
 })
 
 titleContainer.forEach(container => {
-    const top = container.offsetWidth;
+    const top = container.offsetWidth > 0 ? container.offsetWidth  : 162;
     container.style.top = (top/2) + 50 + 'px';
 })

@@ -24,10 +24,10 @@ NAV
     height: 100%;
 }
 .logo-img{
-    width: 150px;
+    width: 170px;
 }
 .tagline-img{
-    width:300px
+    width:250px
 }
 
 @media (max-width: 540px){

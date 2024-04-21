@@ -50,8 +50,8 @@ SLIDER
     width: 100%;
     padding:50px;
 }
-.slide.active:nth-child(1){
-    border-left: 0 solid #191919;
+.slide:nth-child(1){
+    border-left: 0;
 }
 .slide.active{
     flex: 1;
