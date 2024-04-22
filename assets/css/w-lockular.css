@@ -1,5 +1,5 @@
 .w-row{
-    margin-right: 600px;
+    margin-right: 500px;
 }
 .w-img{
     object-fit: cover;
@@ -11,12 +11,13 @@
 }
 .w-card{
     cursor: pointer;
+    margin-top: 30px;
 }
 .w-info-panel{
     position: fixed;
     top: 100px;
     right: 0;
-    width: 600px;
+    width: 500px;
     height: calc(100vh - 160px);
     background-color: #323232;
     overflow: auto;
@@ -48,6 +49,11 @@
     line-height: 24px;
     color: #FFFFFF;
     margin-top: 30px;
+    text-align: center;
+}
+
+.w-card.active{
+    border: 3px solid #F09937;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -88,6 +94,7 @@
     }
     .w-info{
         margin-top: 15px;
+        text-align: left;
     }
     .w-card-info .w-card-body{
         padding: 0 20px;

@@ -42,9 +42,14 @@
         <section id="w-lockular">
             <div class="container">
                 <div class="w-content">
+                    <div class="title-template">
+                        <div class="title-text">
+                            <div>We are</div> <span style="font-weight: 600; margin-left:10px">Lockular</span>
+                        </div>
+                    </div>
                     <div class="row w-row">
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card active" onclick="changeData(0)">
                                 <img class="img-fluid w-img" src="assets/img/ron.jpg" alt="ron" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -54,8 +59,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(1)">
                                 <img class="img-fluid w-img" src="assets/img/nick.png" alt="nick-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -65,8 +70,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(2)">
                                 <img class="img-fluid w-img" src="assets/img/rameez.png" alt="rameez-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -76,8 +81,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(3)">
                                 <img class="img-fluid w-img" src="assets/img/dnyaneshwari.jpg" alt="dnyaneshwari-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -87,8 +92,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(4)">
                                 <img class="img-fluid w-img" src="assets/img/nikita.jpeg" alt="nikita-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -98,8 +103,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(5)">
                                 <img class="img-fluid w-img" src="assets/img/arif.png" alt="arif-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -109,8 +114,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(6)">
                                 <img class="img-fluid w-img" src="assets/img/sabah.jpg" alt="nikita-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -120,8 +125,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(7)">
                                 <img class="img-fluid w-img" src="assets/img/milosz.png" alt="milosz-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -131,8 +136,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(8)">
                                 <img class="img-fluid w-img" src="assets/img/gm.jpg" alt="Gary-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -142,8 +147,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="w-card">
+                        <div class="col-lg-6">
+                            <div class="w-card" onclick="changeData(9)">
                                 <img class="img-fluid w-img" src="assets/img/richard.jpg" alt="Richard-image" />
                                 <div class="w-card-body">
                                     <div class="w-card-text">
@@ -158,13 +163,13 @@
            </div>
            <div class="w-info-panel">
                 <div class="w-card w-card-info">
-                    <img class="img-fluid w-img" src="assets/img/ron.jpg" alt="ron-image" />
+                    <img class="img-fluid w-img" id="w-img" src="assets/img/ron.jpg" alt="ron-image" />
                     <div class="w-card-body">
                         <div class="w-card-text">
-                            <div>Ron</div> <span style="font-weight: 700; margin-left:10px">Black</span>
+                            <div id="w-first-name">Dr Ron</div> <span id="w-last-name" style="font-weight: 700; margin-left:10px">Black</span>
                         </div>
-                        <div class="w-des">Senior Engineer</div>
-                        <div class="w-info">
+                        <div class="w-des" id="w-des">Chairman</div>
+                        <div class="w-info" id="w-info">
                             Ron is a tech veteran having run semiconductor, software, and cyber security businesses for 25 years. Most recently he was CEO of Imagination Technologies, a UK-based semiconductor design IP company best known for its GPU and AI offerings. Prior to that Ron was CEO of Rambus, UPEK and Wavecom, and also led businesses in Agere Systems (Lucent Microelectronics), Gemplus, IBM, and Motorola.
                         </div>
                     </div>
@@ -206,20 +211,102 @@
         <script src="assets/js/scripts.min.js"></script>
         <script src="assets/js/slider.js"></script>
         <script>
-            var cards = document.querySelectorAll('.w-card');
-            var infoPanel = document.querySelector('.w-info-panel');
-            cards.forEach(card => {
+            //Change data on card click
+            const newDataArray = [
+                {
+                    imageSrc: 'assets/img/ron.jpg',
+                    firstName: "Dr Ron",
+                    lastName: "Black",
+                    designation: "Chairman",
+                    info: "John is a software developer with expertise in web development technologies. He enjoys building applications that solve real-world problems."
+                },
+                {
+                    imageSrc: 'assets/img/nick.png',
+                    firstName: "Nick",
+                    lastName: "Evans",
+                    designation: "COO",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                {
+                    imageSrc: 'assets/img/rameez.png',
+                    firstName: "Rameez",
+                    lastName: "Bhat",
+                    designation: "CIO",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                {
+                    imageSrc: 'assets/img/dnyaneshwari.jpg',
+                    firstName: "Dnyaneshwari",
+                    lastName: "Shinde",
+                    designation: "Blockchain Engineer",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                {
+                    imageSrc: 'assets/img/nikita.jpeg',
+                    firstName: "Nikita",
+                    lastName: "Gugale",
+                    designation: "Blockchain Engineer",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                {
+                    imageSrc: 'assets/img/arif.png',
+                    firstName: "Dr Arif",
+                    lastName: "Ahmad",
+                    designation: "Chief Scientist",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                {
+                    imageSrc: 'assets/img/sabah.jpg',
+                    firstName: "Sabah",
+                    lastName: "Gowhar",
+                    designation: "Quality Manager",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                {
+                    imageSrc: 'assets/img/milosz.png',
+                    firstName: "Milosz",
+                    lastName: "Jakubanis",
+                    designation: "Software Engineer",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                {
+                    imageSrc: 'assets/img/gm.jpg',
+                    firstName: "Gary",
+                    lastName: "Mawdsley",
+                    designation: "CTO/CEO",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                {
+                    imageSrc: 'assets/img/richard.jpg',
+                    firstName: "Richard",
+                    lastName: "Sunderland",
+                    designation: "CMO",
+                    info: "Alice is a UX designer passionate about creating user-friendly interfaces. She believes in the power of design to improve people's lives."
+                },
+                // Add more objects as needed
+            ];
+            function changeData(index) {
+                var cards = document.querySelectorAll('.w-card');
+                const newData = newDataArray[index];
+                document.getElementById("w-img").src = newData.imageSrc;
+                document.getElementById("w-first-name").innerText = newData.firstName;
+                document.getElementById("w-last-name").innerText = newData.lastName;
+                document.getElementById("w-des").innerText = newData.designation;
+                document.getElementById("w-info").innerText = newData.info;
+
+                var infoPanel = document.querySelector('.w-info-panel');
                 const isLessThan991 = window.matchMedia("(max-width: 991px)").matches;
                 if (isLessThan991) {
-                    card.addEventListener('click', function(){
-                        if (infoPanel.style.display === "block") {
-                            infoPanel.style.display = 'none';
-                        }else{
-                            infoPanel.style.display = 'block';
-                        }
-                    })
+                    if (infoPanel.style.display === "block") {
+                        infoPanel.style.display = 'none';
+                    }else{
+                        infoPanel.style.display = 'block';
+                    }
                 }
-            })
+                cards.forEach(card => card.classList.remove('active'));
+                cards[index].classList.add('active');
+
+            }
         </script>
     </body>
 </html>
