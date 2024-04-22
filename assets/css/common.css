@@ -23,6 +23,15 @@ ul{
 li{
     list-style: none;
 }
+a{
+
+    color: #F09937;
+}
+
+a:hover{
+
+    color: #F09937;
+}
 
 .title-text{
     display: flex;
