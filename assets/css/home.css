@@ -80,8 +80,15 @@ SLIDER CONTENT
 .content-body{
     font-size: 18px;
     color: white;
-    line-height: 36px;
+    line-height: 20px;
     margin-top: 40px;
+}
+
+.content-body-main{
+    font-size: 18px;
+    color: white;
+    line-height: 20px;
+    margin-top: 20px;
 }
 .content-body .content-body-highlight{
     color: #F09937;
@@ -93,7 +100,17 @@ SLIDER CONTENT
     font-size: 14px;
     padding: 10px 20px;
     color: #F09937;
-    margin-top: 50px;
+    margin-top: 40px;
+}
+
+.content-button-main{
+    background-color: transparent;
+    border: 1px solid #F09937;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #F09937;
+    margin-top: 30px;
 }
 
 @media(max-width: 991px){
