@@ -45,7 +45,7 @@ if ($Return->success == true && $Return->score > 0.5) {
 
         // Email content and settings
         $mail->setFrom('noreply@lockular.com', 'Lockular Website');
-        $mail->addAddress('info@lockular.in');
+        $mail->addAddress('info@lockular.com');
         $mail->isHTML(true);
         $mail->Subject = "Website Enquiry Form by $name on " . date('d-m-Y');
         
