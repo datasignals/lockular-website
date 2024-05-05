@@ -43,5 +43,7 @@ FOOTER
 }
 
 @media(max-width: 540px){
-
+    .footer-twitter{
+        margin-right: 20px;
+    }
 }

@@ -12,8 +12,7 @@
     <link href="assets/css/footer.css" rel="stylesheet">
     <link href="assets/css/w-lockular.css" rel="stylesheet">
     <link href="assets/css/common.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/assets/img/logos/fav_icon.svg">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -75,33 +74,34 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <section id="footer">
         <div class="container">
-            <ul>
-                <li>
-                    <a href="products.html" class="footer-items">Products</a>
-                </li>
-                <li>
-                    <a href="technical_info.html" class="footer-items">Technical Info</a>
-                </li>
-                <li>
-                    <a href="we_lockular.html" class="footer-items"> <u> The Team </u></a>
-                </li>
-                <li>
-                    <a href="ethos-ethics.html" class="footer-items">Ethos & Ethics</a>
-                </li>
-                <li>
-                    <a href="faq.html" class="footer-items">FAQs</a>
-                </li>
-                <li>
-                    <a href="privacy.html" class="footer-items">Privacy</a>
-                </li>
-                <li>
-                    <a href="contact-us.html" class="footer-items">Contact Us</a>
-                </li>
-            </ul>
-            <a href="twitter.html"> <img src="assets/img/svg/x.svg" class="footer-twitter" alt="twitter-brand"/> </a>
+            <div class="f-content">
+                <ul>
+                    <li>
+                        <a href="products.html" class="footer-items">Products</a>
+                    </li>
+                    <li>
+                        <a href="technical_info.html" class="footer-items">Technical Info</a>
+                    </li>
+                    <li>
+                        <a href="we_lockular.html" class="footer-items">The Team</a>
+                    </li>
+                    <li>
+                        <a href="ethos-ethics.html" class="footer-items">Ethos & Ethics</a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="footer-items">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="privacy.html" class="footer-items"> <u> Privacy </u> </a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" class="footer-items">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="twitter.html">  <img src="assets/img/svg/x.svg" class="footer-twitter" alt="twitter-brand"/> </a>
+            </div>
         </div>
     </section>
     <script src="assets/js/jquery.min.js"></script>
@@ -130,6 +130,21 @@
                     `;
                     cardContainer.innerHTML += card;
                 });
+                // Show Info panel on card click
+                var cards = document.querySelectorAll('.w-card');
+                var infoPanel = document.querySelector('.w-info-panel');
+                cards.forEach(card => {
+                    const isLessThan991 = window.matchMedia("(max-width: 991px)").matches;
+                    if (isLessThan991) {
+                        card.addEventListener('click', function(){
+                            if (infoPanel.style.display === "block") {
+                                infoPanel.style.display = 'none';
+                            }else{
+                                infoPanel.style.display = 'block';
+                            }
+                        })
+                    }
+                })
             })
             .catch(error => console.error('Error fetching data:', error));
 

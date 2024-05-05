@@ -32,9 +32,31 @@
     width:120px;
     margin-bottom: 20px;
 }
+.p-col{
+    margin-top:30px;
+}
+.p-col:nth-child(1), .p-col:nth-child(2), .p-col:nth-child(3){
+    margin-top: 0;
+}
 
-@media(max-width: 540px){
+
+@media(max-width: 991px){
+    .p-col:nth-child(3){
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 767px){
     #p-products{
         padding: 20px 0;
+    }
+    .p-col{
+        margin-top: 15px;
+    }
+    .p-col:nth-child(1){
+        margin-top: 15px;
+    }
+    .p-col:nth-child(2), .p-col:nth-child(3){
+        margin-top: 15px;
     }
 }
