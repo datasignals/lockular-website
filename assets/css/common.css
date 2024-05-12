@@ -55,6 +55,10 @@ a:hover{
     color:#F09937;
 }
 
+.contact--bg{
+    padding: 50px 0;
+}
+
 @media (max-width: 767px){
     .title-text{
         font-size: 20px;
@@ -81,6 +85,9 @@ a:hover{
     }
     .outer-con{
         padding:20px 0;
+    }
+    .contact--bg{
+        padding: 20px 0;
     }
 }
 
