@@ -56,13 +56,22 @@ a:hover{
 }
 
 .contact--bg{
-    padding: 50px 0;
+    padding: 20px 0;
+}
+
+.content-height{
+    height: calc(100vh - 220px);
+    overflow: auto;
 }
 
 @media (max-width: 767px){
     .title-text{
         font-size: 20px;
         margin-bottom: 20px;
+    }
+    .content-height{
+        height: auto;
+        overflow: auto;
     }
 }
 
