@@ -23,6 +23,15 @@ ul{
 li{
     list-style: none;
 }
+
+.custom-bullet{
+    list-style: disc inside;
+    padding-left:  10px;
+    display: list-item;
+
+
+}
+
 a{
 
     color: #F09937;
