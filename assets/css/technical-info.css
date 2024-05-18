@@ -1,9 +1,15 @@
 #t-technical-info{
     padding: 50px 0;
 }
-.t-content-container{
+.t-spec{
     padding: 50px;
     background-color: #323232;
+    margin-bottom: 30px;
+}
+.t-content-con{
+    padding: 50px;
+    background-color: #323232;
+    height: 100%;
 }
 .t-tech-spec-card{
     margin-top: 50px;
@@ -17,7 +23,6 @@
     margin-top: 30px;
     line-height: 24px;
 }
-
 .t-tech-spec-card h5{
     color: #F09937;
     font-size: 14px;
@@ -29,7 +34,7 @@
 .t-libraries{
     padding: 50px;
     background-color: #323232;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .t-libraries ul li{
     color: #F09937;
@@ -51,5 +56,12 @@
     }
     .t-tech-spec-card{
         margin-top: 30px;
+    }
+    .t-spec{
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    .t-content-con{
+        padding: 30px;
     }
 }
