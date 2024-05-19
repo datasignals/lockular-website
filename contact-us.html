@@ -59,61 +59,65 @@
             <main>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-6 contact-content text-white ethics content-height">
-                            <h1 class="p-header-text"> Lockular's Journey</h1>
-                            <p>Lockular Limited, originally founded as DataSignals Limited, has evolved significantly over its six-year history. The company was established by Gary Mawdsley with a focus on developing core intellectual property—a filesystem underpinned by a secret sharing storage regime. This technology not only facilitates an access protocol but also ensures an immutable audit of filesystem access, proving extremely valuable in attesting to the provenance of electronic designs. </p>
-                            <p>In its third year, the company underwent a pivotal transformation, rebranding to Lockular and shifting its focus towards product development. This transition was spearheaded by Ron Black, who joined as chairman to guide Lockular from a technology-centric team to a product-oriented company.</p>
-                            <p>Lockular's flagship product emerged as a supply chain provenance tracking platform, developed internally to cater to high-value sectors such as energy, defense, pharmaceuticals, and luxury items. Additionally, Lockular collaborated with EclipseSource, Ericsson, and STMicroelectronics to develop a generalised cloud-based IDE, which serves as the foundation for its supply chain provenance suite.</p>
-                            <p>The platform quickly found application in the energy sector, where it was used by an early adopter to calculate, track, and record carbon savings from IoT boiler controllers. This solution not only secured data capture but also provided an immutable audit trail for carbon offset submissions.</p>
-                            <p>By the fourth year, Lockular had expanded its reach to the electronic design services industry, where a major chip design tooling company called Codasip utilised the platform to attest the provenance of chip designs and subsequently became a reseller.</p>
-                            <p> Another significant application of Lockular's technology is in the UK's electricity transmission network (DNOs), where it secures and analyses LIDAR output to manage vegetation infestation—a critical aspect of infrastructure maintenance. Here, the platform ensures data security and provenance, tracking both the LIDAR data and the analytical outputs.</p>
-                            <p>Currently, Lockular is in the process of raising capital to scale its platform into the pharmaceutical supply chain. This expansion involves deep domain understanding and the integration of smart contracts tailored to various provenance requirements within the sector.</p>
-                            <p>Lockular Limited continues to innovate and expand, driven by a commitment to secure, verifiable data management across multiple high-stakes industries. Over recent years, Lockular has been awarded four patents for its underlying technologies.</p>
+                        <div class="col-12 col-md-6 contact-content text-white ethics">
+                            <div class="contact-con content-height">
+                                <h1 style="color:#F09937"> Lockular's Journey</h1>
+                                <p>Lockular Limited, originally founded as DataSignals Limited, has evolved significantly over its six-year history. The company was established by Gary Mawdsley with a focus on developing core intellectual property—a filesystem underpinned by a secret sharing storage regime. This technology not only facilitates an access protocol but also ensures an immutable audit of filesystem access, proving extremely valuable in attesting to the provenance of electronic designs. </p>
+                                <p>In its third year, the company underwent a pivotal transformation, rebranding to Lockular and shifting its focus towards product development. This transition was spearheaded by Ron Black, who joined as chairman to guide Lockular from a technology-centric team to a product-oriented company.</p>
+                                <p>Lockular's flagship product emerged as a supply chain provenance tracking platform, developed internally to cater to high-value sectors such as energy, defense, pharmaceuticals, and luxury items. Additionally, Lockular collaborated with EclipseSource, Ericsson, and STMicroelectronics to develop a generalised cloud-based IDE, which serves as the foundation for its supply chain provenance suite.</p>
+                                <p>The platform quickly found application in the energy sector, where it was used by an early adopter to calculate, track, and record carbon savings from IoT boiler controllers. This solution not only secured data capture but also provided an immutable audit trail for carbon offset submissions.</p>
+                                <p>By the fourth year, Lockular had expanded its reach to the electronic design services industry, where a major chip design tooling company called Codasip utilised the platform to attest the provenance of chip designs and subsequently became a reseller.</p>
+                                <p> Another significant application of Lockular's technology is in the UK's electricity transmission network (DNOs), where it secures and analyses LIDAR output to manage vegetation infestation—a critical aspect of infrastructure maintenance. Here, the platform ensures data security and provenance, tracking both the LIDAR data and the analytical outputs.</p>
+                                <p>Currently, Lockular is in the process of raising capital to scale its platform into the pharmaceutical supply chain. This expansion involves deep domain understanding and the integration of smart contracts tailored to various provenance requirements within the sector.</p>
+                                <p>Lockular Limited continues to innovate and expand, driven by a commitment to secure, verifiable data management across multiple high-stakes industries. Over recent years, Lockular has been awarded four patents for its underlying technologies.</p>
+                            </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <div class="text-white ethics">    
-                                <h1 class="p-header-text" style="margin-bottom: 20px; ">Contact Us</h1>
+                            <div class="contact-con content-height">
+                                <div class="text-white ethics">    
+                                    <h1 style="margin-bottom: 20px; color:#F09937 ">Contact Us</h1>
+                                </div>
+                                <form method="post" id="submit-form" action="form/submit.php" class="form" style="position: relative;">
+                                    <div class="form-row">
+                                        <div class="col-md-6 pr-md-2 mb-4">
+                                            <label for="fullName" class="d-none">First Name</label>
+                                            <input type="text" id="fullName" name="full_name" class="form-control form-control-lg rounded-0 contact--input" placeholder="Full Name*" required >
+                                        </div>
+                                        <div class="col-md-6 pl-md-2 mb-4">
+                                            <label for="jobTitle" class="d-none">Job Title</label>
+                                            <input type="text" id="jobTitle" name="job_title" class="form-control form-control-lg rounded-0 contact--input" placeholder="Job Title" >
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 pr-md-2 mb-4">
+                                            <label for="companyName" class="d-none">Company Name</label>
+                                            <input type="text" id="companyName" name="company_name" class="form-control form-control-lg rounded-0 contact--input" placeholder="Company Name" >
+                                        </div>
+                                        <div class="col-md-6 pl-md-2 mb-4">
+                                            <label for="email" class="d-none">Email Address</label>
+                                            <input type="email" id="email" name="email" class="form-control form-control-lg rounded-0 contact--input" placeholder="Email Address*" required >
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-12 mb-4">
+                                            <label for="message" class="d-none">Nature of Enquiry</label>
+                                            <textarea name="message" id="message" class="form-control form-control-lg contact--textarea rounded-0" rows="3" placeholder="Nature of Enquiry*" required ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-privacy">
+                                        <div class="checkbox-holder mb-4 pe-30">
+                                            <input type="checkbox" class="contact-checkbox" id="checkbox" name="checkbox" required="">
+                                            <label for="checkbox" class="checkbox-text">I consent to my data being processed in accordance with the Lockular <a target="_blank" href="https://lockular-dev.w3digital.com/privacy.html">Privacy Statement</a>*</label>
+                                        </div>
+                                        <span class="lable-required">required*</span>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-12 text-lg-left text-right" style="margin-bottom: 20px;" >
+                                            <button type="submit" class="contact--button rounded-0 g-recaptcha" data-badge="inline" data-sitekey="6LdwhUkpAAAAANGWRZhm2eMW2mu-ESkXBHhhp-qp" data-callback='onSubmit' data-action='submit'>Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <form method="post" id="submit-form" action="form/submit.php" class="form" style="position: relative;">
-                                <div class="form-row">
-                                    <div class="col-md-6 pr-md-2 mb-4">
-                                        <label for="fullName" class="d-none">First Name</label>
-                                        <input type="text" id="fullName" name="full_name" class="form-control form-control-lg rounded-0 contact--input" placeholder="Full Name*" required >
-                                    </div>
-                                    <div class="col-md-6 pl-md-2 mb-4">
-                                        <label for="jobTitle" class="d-none">Job Title</label>
-                                        <input type="text" id="jobTitle" name="job_title" class="form-control form-control-lg rounded-0 contact--input" placeholder="Job Title" >
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-6 pr-md-2 mb-4">
-                                        <label for="companyName" class="d-none">Company Name</label>
-                                        <input type="text" id="companyName" name="company_name" class="form-control form-control-lg rounded-0 contact--input" placeholder="Company Name" >
-                                    </div>
-                                    <div class="col-md-6 pl-md-2 mb-4">
-                                        <label for="email" class="d-none">Email Address</label>
-                                        <input type="email" id="email" name="email" class="form-control form-control-lg rounded-0 contact--input" placeholder="Email Address*" required >
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-12 mb-4">
-                                        <label for="message" class="d-none">Nature of Enquiry</label>
-                                        <textarea name="message" id="message" class="form-control form-control-lg contact--textarea rounded-0" rows="3" placeholder="Nature of Enquiry*" required ></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-privacy">
-                                    <div class="checkbox-holder mb-4 pe-30">
-                                        <input type="checkbox" class="contact-checkbox" id="checkbox" name="checkbox" required="">
-                                        <label for="checkbox" class="checkbox-text">I consent to my data being processed in accordance with the Lockular <a target="_blank" href="https://lockular-dev.w3digital.com/privacy.html">Privacy Statement</a>*</label>
-                                    </div>
-                                    <span class="lable-required">required*</span>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-12 text-lg-left text-right" style="margin-bottom: 20px;" >
-                                        <button type="submit" class="contact--button rounded-0 g-recaptcha" data-badge="inline" data-sitekey="6LdwhUkpAAAAANGWRZhm2eMW2mu-ESkXBHhhp-qp" data-callback='onSubmit' data-action='submit'>Submit</button>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>

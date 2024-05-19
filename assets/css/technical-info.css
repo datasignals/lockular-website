@@ -41,6 +41,27 @@
     font-size: 14px;
     padding: 10px 0;
 }
+.provenance-height{
+    height: 120px;
+}
+.man-height{
+    height: 120px;
+}
+.cloud-height{
+    height: 97px;
+}
+
+@media (max-width: 1200px){
+    .provenance-height{
+        height: auto;
+    }
+    .man-height{
+        height: auto;
+    }
+    .cloud-height{
+        height: auto;
+    }
+}
 
 @media (max-width: 540px){
     #t-technical-info{
