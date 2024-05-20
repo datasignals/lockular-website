@@ -59,6 +59,7 @@
                 <div class="">
                     <div class="row">
                          <!-- 1  Secure Working (Cloud Native)  -->
+
                         <div class="col-12 text-white faq" id="secure-working">
                            <h3 class="p-header-text"> Secure Working (Cloud Native) </h3>
                            <p>SecureWorking is a highly scalable, cloud-based Integrated Development Environment (IDE) that is a product of collaboration between Lockular, EclipseSource, Ericsson, and STMicroelectronics. This open-source environment leverages Kubernetes to efficiently scale across thousands of user environments, making it a robust solution for various design needs.</p>
@@ -113,10 +114,11 @@
                         </div>
 
                         <!--  2  NFT Marketplace  -->
-                        <div class="col-12" id="nft-marketplace">
+                        
+                        <div class="col-12 text-white faq" id="nft-marketplace">
                             <h3 class="p-header-text"> NFT Marketplace </h3>
                             <p>The Lockular NFT Marketplace Platform is an innovative solution designed to track and manage both real-world objects and electronic design artifacts through the use of Non-Fungible Tokens (NFTs). This platform is integral to Lockular's suite of supply chain provenance tools, providing a robust mechanism for the authentication, authorisation, and transaction of assets.</p>
-                            <h2 class="p-header-text"> Key Features of the Lockular NFT Marketplace Platform:</h2>
+                            <h2 class="p-header-text" style="margin-bottom:20px">  Key Features of the Lockular NFT Marketplace Platform:</h2>
                             <ol style="list-style-type: decimal;">
                                 <li class="tech-key"><em class="p-header-text">Tracking Real-World and Electronic Artifacts:</em><br>
                                     <ul class="tech-list">
@@ -158,7 +160,7 @@
                         </div>
 
                         <!-- 3 WAM  -->
-                        <div class="col-12" id="wam">
+                        <div class="col-12 text-white faq" id="wam">
                              <h3 class="p-header-text"> Workflow Actor Management (WAM) </h3>
                              <p>The Workflow Actor Management (WAM) component is a crucial part of Lockular Limited's supply chain provenance suite, designed to manage and oversee the cooperative relationships among organisations involved in complex workflows, such as design and manufacturing processes. Here are the key points about WAM:</p>
                              <h2 class="p-header-text"> Key Features of WAM:</h2>
@@ -176,7 +178,7 @@
                         </div>
 
                         <!--  4 Provenance Tracking Filesystem  -->
-                        <div class="col-12" id="provenance">
+                        <div class="col-12 text-white faq" id="provenance">
                             <h3 class="p-header-text"> Secure Filesystem featuring Provenance Reporting</h3>
 
                             <p>Lockular's provenance tracking filesystem is a sophisticated component of the supply chain provenance suite, designed to ensure the security and traceability of files throughout their lifecycle.</p>
@@ -232,7 +234,7 @@
                         </div>
 
                         <!--  5  Secure  Artifact Store (Cloud Native)  -->
-                        <div class="col-12" id="secure-artifact">
+                        <div class="col-12 text-white faq" id="secure-artifact">
                              <h3 class="p-header-text"> Secure Artifact Store </h3>
                              <p>Lockular's Secure Artifact Store is a specialised component designed to enhance the management and curation of artifacts across various NFT Marketplaces.</p>
                              <p>This component is an integral part of Lockular's supply chain provenance suite, although it is specifically tailored to work with digital artifacts within the NFT ecosystem.</p>
@@ -317,5 +319,23 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/scripts.min.js"></script>
         <script src="assets/js/slider.js"></script>
+        <script>
+           function offsetAnchor() {
+                    if(location.hash.length !== 0) {
+                        window.scrollTo(window.scrollX, window.scrollY - 100);
+                        console.log("called from details ")
+                        console.log(window.scrollY)
+
+                    }
+                }
+
+                // This will capture hash changes while on the page
+                window.addEventListener("hashchange", offsetAnchor);
+
+                // This is here so that when you enter the page with a hash,
+                // it can provide the offset in that case too. Having a timeout
+                // seems necessary to allow the browser to jump to the anchor first.
+                window.setTimeout(offsetAnchor, 5);
+    </script>  
     </body>
 </html>   
