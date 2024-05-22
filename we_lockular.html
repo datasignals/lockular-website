@@ -126,6 +126,10 @@
                                         <div>${item.firstName}</div> <span style="font-weight: 700; margin-left:10px">${item.lastName}</span>
                                     </div>
                                     <div class="w-des">${item.designation}</div>
+                                    <div class="w-team-card-info">
+                                        ${item.info}
+                                    </div>
+                                    <button class="w-card-button">View More</button>
                                 </div>
                             </div>
                         </div>
@@ -134,19 +138,22 @@
                 });
                 // Show Info panel on card click
                 var cards = document.querySelectorAll('.w-card');
-                var infoPanel = document.querySelector('.w-info-panel');
                 cards.forEach(card => {
-                    const isLessThan991 = window.matchMedia("(max-width: 991px)").matches;
-                    if (isLessThan991) {
-                        card.addEventListener('click', function(){
-                            if (infoPanel.style.display === "block") {
-                                infoPanel.style.display = 'none';
-                            }else{
-                                infoPanel.style.display = 'block';
-                            }
-                        })
-                    }
-                })
+                        const isLessThan991 = window.matchMedia("(max-width: 991px)").matches;
+                        if (isLessThan991) {
+                            var infoBtn = card.querySelector('.w-card-button');
+                            var info = card.querySelector('.w-team-card-info');
+                            infoBtn.addEventListener('click', function(){
+                                if (info.style.display === "block") {
+                                    info.style.display = 'none';
+                                    infoBtn.innerText = 'View More';
+                                }else{
+                                    info.style.display = 'block';
+                                    infoBtn.innerText = 'View Less';
+                                }
+                            })
+                        }
+                    })
             })
             .catch(error => console.error('Error fetching data:', error));
 
