@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <style>
+    path{
+      fill: #000000;
+    }
+    @media(prefers-color-scheme: dark){
+      path {
+        fill: #ffffff;
+      }
+    }
+  </style>
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_133" data-name="Rectangle 133" width="128" height="128" transform="translate(-169 3693)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="fav_icon" transform="translate(169 -3693)" clip-path="url(#clip-path)">
+    <path id="Path_329" data-name="Path 329" d="M42.288,0,0,42.288v85.346H85.339l42.294-42.288V0ZM80.875,80.875H47.192V46.759H80.875ZM6.315,44.908,40.877,10.352V87.2h40v34.116H6.315Zm115,37.817L87.2,116.848V40.437h-40V6.321h74.12Z" transform="translate(-169 3693)"/>
+  </g>
+</svg>

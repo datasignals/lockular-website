@@ -1,0 +1,72 @@
+[
+    {
+        "imageSrc": "assets/bio/img/ron.jpg",
+        "firstName": "Dr Ron",
+        "lastName": "Black",
+        "designation": "Chairman",
+        "info": "Ron is a tech veteran having run semiconductor, software, and cyber security businesses for 25 years. Most recently he was CEO of Imagination Technologies, a UK-based semiconductor design IP company best known for its GPU and AI offerings. Prior to that Ron was CEO of Rambus, UPEK and Wavecom, and also led businesses in Agere Systems (Lucent Microelectronics), Gemplus, IBM, and Motorola."
+    },
+    {
+        "imageSrc": "assets/bio/img/nick.png",
+        "firstName": "Nick",
+        "lastName": "Evans",
+        "designation": "COO",
+        "info": "Nick’s early career started with digital electronics where he designed a motherboard for nuclear submarines and then transitioned his knowledge of data transfer to telecoms on dry land and worked with many multi-national companies as they expanded their global presence. Nick was an IT account manager for companies across North America and Europe, helping them become early adopters of advanced technology for business advantage. Nick is a Chartered Engineer."
+    },
+    {
+        "imageSrc": "assets/bio/img/rameez.png",
+        "firstName": "Rameez",
+        "lastName": "Bhat",
+        "designation": "CIO",
+        "info": "Rameez, equipped with a Master's degree in Computer Science, commenced his professional journey as a 2D game developer, crafting widely acclaimed educational games for mobile and web platforms. Demonstrating inherent leadership skills, he has guided teams in mobile and web app development, adeptly addressing varied obstacles through the application of advanced algorithms and computer science methodologies. Fuelled by an unyielding fervour for coding and technological progress, Rameez spearheads Lockular's cloud-native operations, with Kubernetes serving as the cornerstone for enhanced operational efficiency."
+    },
+    {
+        "imageSrc": "assets/bio/img/dnyaneshwari.jpg",
+        "firstName": "Dnyaneshwari",
+        "lastName": "Shinde",
+        "designation": "Blockchain Developer",
+        "info": "Dnyaneshwari Shinde is an adept Software Developer with a focus on Blockchain technology. Armed with a Master's degree in Computer Science, Dnyaneshwari brings profound expertise to the realm of Blockchain. Her fascination with Web3 and Blockchain fuels a commitment to uncovering its myriad applications. Beyond her professional domain, Dnyaneshwari is driven by a passion for utilizing technology to enact positive change in society, embodying a dedication to making a meaningful impact on the world."
+    },
+    {
+        "imageSrc": "assets/bio/img/nikita.jpeg",
+        "firstName": "Nikita",
+        "lastName": "Gugale",
+        "designation": "Blockchain Developer",
+        "info": "Nikita Gugale is a skilled Software Developer specialising in Blockchain technology at Lockular. Holding a Master's degree in Computer Science, she brings a deep understanding of the field to her work. With a keen interest in Web3 and Blockchain, she is dedicated to exploring its potential applications. Beyond her professional endeavours, she is passionate about leveraging technology for social good, striving to make a positive impact in the world."
+    },
+    {
+        "imageSrc": "assets/bio/img/arif.png",
+        "firstName": "Dr Arif",
+        "lastName": "Ahmad",
+        "designation": "Chief Scientist",
+        "info": "Arif possesses a Ph.D. in the evolving areas of Big Data, Machine Learning, and Deep Learning, and has authored several research papers published in journals indexed by Scopus. As the Chief Scientist at Lockular, he leverages his extensive knowledge to focus on creating secure filesystems by applying sophisticated cryptographic methods based on Blockchain technology, aiming to achieve the highest standards of data integrity and confidentiality. His dedication to advancing technology is demonstrated through his ongoing participation in cutting-edge deep tech research and a strong interest in enhancing data security and privacy technologies. Motivated by the goal of making significant impacts in the field of computer science, Arif is committed to innovation and excellence."
+    },
+    {
+        "imageSrc": "assets/bio/img/sabah.jpg",
+        "firstName": "Sabah",
+        "lastName": "Gowhar",
+        "designation": "Quality Manager",
+        "info": "Sabah an Electronics Engineer embarked on a transformative journey in the realm of technology. Venturing into the corporate arena, Sabah left an indelible mark at top-tier multinational corporations. Today she's excited to work at Lockular, where her role as a Quality Manager epitomises her commitment to excellence. With each endeavour, Sabah exemplifies the fusion of technical prowess and unwavering dedication, paving the way for innovation and success in the dynamic landscape of technology and quality assurance."
+    },
+    {
+        "imageSrc": "assets/bio/img/milosz.png",
+        "firstName": "Milosz",
+        "lastName": "Jakubanis",
+        "designation": "Software Engineer",
+        "info": "Milosz is a versatile software engineer with a knack for navigating through multiple technology stacks. With extensive hands-on experience in Java, Node.js, and Scala, he brings a unique blend of expertise to every project he undertakes.Driven by a passion for innovation and problem-solving, Milosz thrives in dynamic environments where he can apply his diverse skill set to tackle complex challenges. His commitment to excellence and attention to detail ensure that his solutions are not only efficient but also robust and scalable."
+    },
+    {
+        "imageSrc": "assets/bio/img/gm.jpg",
+        "firstName": "Gary",
+        "lastName": "Mawdsley",
+        "designation": "CTO/CEO",
+        "info": "Gary was responsible for establishing the UK's first internet banking system to critical acclaim in the late 90s. He went on to develop ideas in the area of microservices, service orchestration and data privacy across segments from education to financial services. The holder of six patents in service assembly and data privacy, Gary's current work is focused in protecting data from the infrastructure both at rest and when data is in flight, with particular reference to homomorphic encrypted data and signals based AI."
+    },
+    {
+        "imageSrc": "assets/bio/img/richard.jpg",
+        "firstName": "Richard",
+        "lastName": "Sunderland",
+        "designation": "CMO",
+        "info": "As CEO founder of consultancy Heavenly Group, Richard has advised technology companies in the US and UK over a number of years, particularly in the semiconductor and data security space. Richard is a specialist in corporate and product positioning, go-to-market strategy and partnerships."
+    }
+]

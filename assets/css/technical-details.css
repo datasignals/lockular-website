@@ -1,0 +1,58 @@
+#nft-marketplace{
+    background-color: #323232;
+    margin-bottom: 30px;
+    padding: 30px;
+    line-height: 24px;
+}
+#secure-working{
+    background-color: #323232;
+    margin-bottom: 30px;
+    padding: 30px;
+    line-height: 24px;
+}
+#wam{
+    background-color: #323232;
+    margin-bottom: 30px;
+    padding: 30px;
+    line-height: 24px;
+}
+#provenance{
+    background-color: #323232;
+    margin-bottom: 30px;
+    padding: 30px;
+    line-height: 24px;
+}
+#secure-artifact{
+    background-color: #323232;
+    margin-bottom: 30px;
+    padding: 30px;
+    line-height: 24px;
+}
+.tech-key{
+    margin-bottom: 20px;
+}
+.tech-list li{
+    margin-top: 15px;
+    padding-left: 35px;
+    position: relative;
+}
+.tech-list li img{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+}
+
+.disc-class{
+    font-size: medium;
+    list-style-type: disc;
+    margin-top: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.index-list-li{
+    margin-bottom: 20px;
+    list-style-type: disc;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Contact Us | Lockular</title>
+        <title>Contact Us | Lockular </title>
         <meta name="description" content="">
         <link rel="canonical" href="">
 
@@ -10,6 +10,23 @@
 
         <link rel="stylesheet" href="https://use.typekit.net/pgg0xvm.css">
         <link href="assets/css/style.min.css" rel="stylesheet">
+        <link href="assets/css/header.css" rel="stylesheet">
+        <link href="assets/css/footer.css" rel="stylesheet">
+        <link href="assets/css/common.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/svg+xml" sizes="any" href="/assets/img/logos/fav_icon.svg">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <style>
+            /* Custom styling for reCAPTCHA */
+            .g-recaptcha {
+            margin-top: 20px; /* Adjust the top margin */
+            width: 100%; /* Set the width of the reCAPTCHA widget */
+            }
+        </style>
         
         <script type="text/javascript">
             _linkedin_partner_id = "2979417";
@@ -27,149 +44,123 @@
         <noscript>
             <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2979417&fmt=gif" />
         </noscript>
-        <header class="bg-black header">
-            <button id="mobileNav" class="hamburger hamburger--contact hamburger--collapse" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <div class="container-xxl">
-                <div class="row">
-                    <section class="col-lg-7 py-3 py-lg-0 bg-black d-flex">
-                        <div class="row w-100 m-auto">
-                            <div class="col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
-                                <a href="/" class="header--logo">
-                                    <img srcset="assets/img/logos/1x/logo-white.png 1x, assets/img/logos/2x/logo-white@2x.png 2x, assets/img/logos/3x/logo-white@3x.png 3x" src="assets/img/logos/SVG/logo-white.svg" alt="Lockular">
-                                </a>
-                            </div>
-                            <div class="col-lg-6 d-flex mb-3 mb-lg-0 text-white">
-                                <span class="my-auto ml-lg-auto mr-lg-0 mx-auto">Commonsense data defense&reg;</span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="col-5 d-none d-lg-block">
-                        <div class="bg-black p-5"></div>
-                    </section>
+        <!-- Header -->
+        <section id="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html">  <img src="assets/img/logos/SVG/logo.svg" class="logo-img" alt="brand-logo"/> </a>
+
+                    <img src="assets/img/svg/tagline.svg" class="tagline-img" alt="brand-tagline"/>
                 </div>
             </div>
-        </header>
+        </section>
+
         <section class="contact--bg">
             <main>
-                <div class="container-xxl">
+                <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-11 py-5 text-white content-block contact">
-                            <h1>Contact Us</h1>
-                            <form method="post" id="submit-form" action="form/submit.php" class="form">
-                                <div class="form-row">
-                                    <div class="col-md-6 pr-md-2 mb-4">
-                                        <label for="fullName" class="d-none">First Name</label>
-                                        <input type="text" id="fullName" name="full_name" class="form-control form-control-lg rounded-0 contact--input" placeholder="Full Name*" required >
-                                    </div>
-                                    <div class="col-md-6 pl-md-2 mb-4">
-                                        <label for="jobTitle" class="d-none">Job Title</label>
-                                        <input type="text" id="jobTitle" name="job_title" class="form-control form-control-lg rounded-0 contact--input" placeholder="Job Title" >
-                                    </div>
+                        <div class="col-12 col-md-6 contact-content text-white ethics">
+                            <div class="contact-con content-height">
+                                <h1 style="color:#F09937"> Lockular's Journey</h1>
+                                <p>Lockular Limited, originally founded as DataSignals Limited, has evolved significantly over its six-year history. The company was established by Gary Mawdsley with a focus on developing core intellectual property—a filesystem underpinned by a secret sharing storage regime. This technology not only facilitates an access protocol but also ensures an immutable audit of filesystem access, proving extremely valuable in attesting to the provenance of electronic designs. </p>
+                                <p>In its third year, the company underwent a pivotal transformation, rebranding to Lockular and shifting its focus towards product development. This transition was spearheaded by Ron Black, who joined as chairman to guide Lockular from a technology-centric team to a product-oriented company.</p>
+                                <p>Lockular's flagship product emerged as a supply chain provenance tracking platform, developed internally to cater to high-value sectors such as energy, defense, pharmaceuticals, and luxury items. Additionally, Lockular collaborated with EclipseSource, Ericsson, and STMicroelectronics to develop a generalised cloud-based IDE, which serves as the foundation for its supply chain provenance suite.</p>
+                                <p>The platform quickly found application in the energy sector, where it was used by an early adopter to calculate, track, and record carbon savings from IoT boiler controllers. This solution not only secured data capture but also provided an immutable audit trail for carbon offset submissions.</p>
+                                <p>By the fourth year, Lockular had expanded its reach to the electronic design services industry, where a major chip design tooling company called Codasip utilised the platform to attest the provenance of chip designs and subsequently became a reseller.</p>
+                                <p> Another significant application of Lockular's technology is in the UK's electricity transmission network (DNOs), where it secures and analyses LIDAR output to manage vegetation infestation—a critical aspect of infrastructure maintenance. Here, the platform ensures data security and provenance, tracking both the LIDAR data and the analytical outputs.</p>
+                                <p>Currently, Lockular is in the process of raising capital to scale its platform into the pharmaceutical supply chain. This expansion involves deep domain understanding and the integration of smart contracts tailored to various provenance requirements within the sector.</p>
+                                <p>Lockular Limited continues to innovate and expand, driven by a commitment to secure, verifiable data management across multiple high-stakes industries. Over recent years, Lockular has been awarded four patents for its underlying technologies.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="contact-con content-height">
+                                <div class="text-white ethics">    
+                                    <h1 style="margin-bottom: 20px; color:#F09937 ">Contact Us</h1>
                                 </div>
-                                <div class="form-row">
-                                    <div class="col-md-6 pr-md-2 mb-4">
-                                        <label for="companyName" class="d-none">Company Name</label>
-                                        <input type="text" id="companyName" name="company_name" class="form-control form-control-lg rounded-0 contact--input" placeholder="Company Name" >
+                                <form method="post" id="submit-form" action="form/submit.php" class="form" style="position: relative;">
+                                    <div class="form-row">
+                                        <div class="col-md-6 pr-md-2 mb-4">
+                                            <label for="fullName" class="d-none">First Name</label>
+                                            <input type="text" id="fullName" name="full_name" class="form-control form-control-lg rounded-0 contact--input" placeholder="Full Name*" required >
+                                        </div>
+                                        <div class="col-md-6 pl-md-2 mb-4">
+                                            <label for="jobTitle" class="d-none">Job Title</label>
+                                            <input type="text" id="jobTitle" name="job_title" class="form-control form-control-lg rounded-0 contact--input" placeholder="Job Title" >
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 pl-md-2 mb-4">
-                                        <label for="email" class="d-none">Email Address</label>
-                                        <input type="email" id="email" name="email" class="form-control form-control-lg rounded-0 contact--input" placeholder="Email Address*" required >
+                                    <div class="form-row">
+                                        <div class="col-md-6 pr-md-2 mb-4">
+                                            <label for="companyName" class="d-none">Company Name</label>
+                                            <input type="text" id="companyName" name="company_name" class="form-control form-control-lg rounded-0 contact--input" placeholder="Company Name" >
+                                        </div>
+                                        <div class="col-md-6 pl-md-2 mb-4">
+                                            <label for="email" class="d-none">Email Address</label>
+                                            <input type="email" id="email" name="email" class="form-control form-control-lg rounded-0 contact--input" placeholder="Email Address*" required >
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-12 mb-4">
-                                        <label for="message" class="d-none">Nature of Enquiry</label>
-                                        <textarea name="message" id="message" class="form-control form-control-lg contact--textarea rounded-0" rows="3" placeholder="Nature of Enquiry*" required ></textarea>
+                                    <div class="form-row">
+                                        <div class="col-12 mb-4">
+                                            <label for="message" class="d-none">Nature of Enquiry</label>
+                                            <textarea name="message" id="message" class="form-control form-control-lg contact--textarea rounded-0" rows="3" placeholder="Nature of Enquiry*" required ></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-privacy">
-                                    <div class="checkbox-holder mb-4 pe-30">
-                                        <input type="checkbox" id="checkbox" name="checkbox" required="">
-                                        <label for="checkbox" class="checkbox-text">I consent to my data being processed in accordance with the Lockular <a target="_blank" href="https://lockular-dev.w3digital.com/privacy.html">Privacy Statement</a>*</label>
+                                    <div class="form-privacy">
+                                        <div class="checkbox-holder mb-4 pe-30">
+                                            <input type="checkbox" class="contact-checkbox" id="checkbox" name="checkbox" required="">
+                                            <label for="checkbox" class="checkbox-text">I consent to my data being processed in accordance with the Lockular <a target="_blank" href="https://lockular-dev.w3digital.com/privacy.html">Privacy Statement</a>*</label>
+                                        </div>
+                                        <span class="lable-required">required*</span>
                                     </div>
-                                    <span class="lable-required">required*</span>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-12 text-lg-left text-right">
-                                        <button type="submit" class="contact--button rounded-0 g-recaptcha" data-sitekey="6LdwhUkpAAAAANGWRZhm2eMW2mu-ESkXBHhhp-qp" data-callback='onSubmit' data-action='submit'>Submit</button>
+                                    <div class="form-row">
+                                        <div class="col-12 text-lg-left text-right" style="margin-bottom: 20px;" >
+                                            <button type="submit" class="contact--button rounded-0 g-recaptcha" data-badge="inline" data-sitekey="6LdwhUkpAAAAANGWRZhm2eMW2mu-ESkXBHhhp-qp" data-callback='onSubmit' data-action='submit'>Submit</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
-            <nav>
-                <div class="container-xxl">
-                    <div class="row">
-                        <div class="col-lg-7 py-lg-3">
-                            <ul class="navigation navigation--contact">
-                                <li>
-                                    <a href="the-team.html">The Team</a>
-                                </li>
-                                <li>
-                                    <a href="ethos-ethics.html">Ethos and Ethics</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">FAQ's</a>
-                                </li>
-                                <li>
-                                    <a href="privacy.html">Privacy Statement</a>
-                                </li>
-                                <li>
-                                    <a href="contact-us.html" class="active">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-5 d-none d-lg-block">
-                            <div class="p-4"></div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
         </section>
-        <footer>
-            <div class="container-xxl">
-                <div class="row">
-                    <div class="col-md-7 text-center text-md-left footer--bg py-4">
-                        <p class="mb-3 my-md-0">Lockular Limited, 3 Hardman Square, Manchester, M3 3EB, UK</p>
-                        <p class="my-0">Lockular LLC, 1655 Fort Myer Drive, Suite 700, Arlington, VA 22209, United States</p>
-                    </div>
-                    <div class="col-md-5 footer--bg d-block d-md-flex py-4">
-                        <div class="footer--logos">
-                            <div class="footer--logo">
-                                <img srcset="assets/img/logos/1x/secure-working-logo.png 1x, assets/img/logos/2x/secure-working-logo@2x.png 2x, assets/img/logos/3x/secure-working-logo@3x.png 3x" src="assets/img/logos/SVG/secure-working-logo.svg" alt="Lockular">
-                            </div>
-                            <div class="footer--logo">
-                                <img srcset="assets/img/logos/1x/ai-lab-logo.png 1x, assets/img/logos/2x/ai-lab-logo@2x.png 2x, assets/img/logos/3x/ai-lab-logo@3x.png 3x" src="assets/img/logos/SVG/ai-lab-logo.svg" alt="Lockular">
-                            </div>
-                            <div class="footer--logo">
-                                <img srcset="assets/img/logos/1x/connected-devices-logo.png 1x, assets/img/logos/2x/connected-devices-logo@2x.png 2x, assets/img/logos/3x/connected-devices-logo@3x.png 3x" src="assets/img/logos/SVG/connected-devices-logo.svg" alt="Lockular">
-                            </div>
-                        </div>
-                        <div class="footer--icons">
-                            <a href="https://twitter.com/lockular" class="footer--icon my-auto mr-3" target="_blank">
-                                <img srcset="assets/img/icons/1x/twitter-icon.png 1x, assets/img/icons/2x/twitter-icon@2x.png 2x, assets/img/icons/3x/twitter-icon@3x.png 3x" src="assets/img/icons/SVG/twitter-icon.svg" alt="Twitter">
-                            </a>
-                            <a href="mailto:info@lockular.com" class="footer--icon my-auto" target="_blank">
-                                <img srcset="assets/img/icons/1x/mail-icon.png 1x, assets/img/icons/2x/mail-icon@2x.png 2x, assets/img/icons/3x/mail-icon@3x.png 3x" src="assets/img/icons/SVG/mail-icon.svg" alt="Email">
-                            </a>
-                        </div>
-                    </div>
+         <!-- Footer -->
+         <section id="footer">
+            <div class="container">
+                <div class="f-content">
+                    <ul>
+                        <li>
+                            <a href="contact-us.html" class="footer-items"> <u> Contact Us </u></a>
+                        </li>
+                        
+                        <li>
+                            <a href="products.html" class="footer-items">Products</a>
+                        </li>
+                        <li>
+                            <a href="technical_info.html" class="footer-items">Technical Info</a>
+                        </li>
+                        <li>
+                            <a href="we_lockular.html" class="footer-items">The Team</a>
+                        </li>
+                        <li>
+                            <a href="ethos-ethics.html" class="footer-items">Ethos & Ethics</a>
+                        </li>
+                        <li>
+                            <a href="faq.html" class="footer-items">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html" class="footer-items">Privacy</a>
+                        </li>
+
+                    </ul>
+                    <a href="twitter.html">  <img src="assets/img/svg/x.svg" class="footer-twitter" alt="twitter-brand"/> </a>
                 </div>
             </div>
-        </footer>
-        
+        </section>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/scripts.min.js"></script>
-
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-
+        <script src="assets/js/slider.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script>
             function onSubmit(token) {
                 var applicationForm = document.getElementById("submit-form");
@@ -180,6 +171,5 @@
                 }
             }
         </script>
-
     </body>
 </html>
