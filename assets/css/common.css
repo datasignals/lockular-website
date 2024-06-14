@@ -96,11 +96,14 @@ a:hover{
     scroll-margin-top: 100px;
 }
 
+<<<<<<< HEAD
+=======
 .li-letters{
     padding-left: 30px; /* Adjust the value as needed */
     text-indent: -20px; 
 }
 
+>>>>>>> develop
 @media (max-width: 767px){
     .title-text{
         font-size: 20px;
