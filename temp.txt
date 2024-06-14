@@ -72,7 +72,7 @@
                                         </p>
                                     </span>
                                 </div>
-                                <button type="button" class="content-button"><a href="products.html">Our Supply Chain Suite of Components</a></button>
+                                <button type="button" class="content-button"><a href="products.html">Our Provenance Tracking Suite of Components</a></button>
                             </div>
                         </div>
                     </li>
