@@ -53,15 +53,89 @@
                 <!-- Title -->
                 <div class="title-template">
                     <div class="title-text">
-                        <div>Supply Chain Suite Details</div>
+                        <div>Provenance Suite Details</div>
                     </div>
                 </div>
                 <div class="">
                     <div class="row">
-                         <!-- 1  Secure Working (Cloud Native)  -->
+                        <!--  1 Provenance Tracking Filesystem  -->
+                        <div class="col-12 text-white faq" id="provenance">
+                            <h3 class="p-header-text">Provenance Tracking Filesystem</h3>
+
+                            <p>Lockular's provenance tracking filesystem is the cornerstone component of the provenance suite, designed to ensure the security and traceability of files throughout their lifecycle.</p>
+                            
+                            <h2 class="p-header-text">Key Features of Lockular's Provenance Tracking Filesystem:</h2>
+                            <ol style="list-style-type: decimal;">
+                                <li class="tech-key"><em class="p-header-text">POSIX Compliance and Attachment Options:</em><br>
+                                    <ul class="tech-list">
+                                        <li><img src="assets/img/svg/bullet.svg"> The filesystem conforms to the POSIX standard, ensuring compatibility with standard interfaces and behaviours.</li>
+                                        <li><img src="assets/img/svg/bullet.svg"> It can be attached using FUSE (Filesystem in Userspace) or NFS (Network File System), providing flexibility in deployment and integration with various environments.</li>
+                                    </ul>
+                                </li><br>
+                                <li class="tech-key"><em class="p-header-text">Shamir's Secret Sharing:</em>
+                                    <ul class="tech-list">
+                                        <li><img src="assets/img/svg/bullet.svg"> Filesystem metadata and blocks are broken into shares using Shamir's Secret Sharing, a cryptographic method that enhances security by distributing data across multiple locations.</li>
+                                        <li><img src="assets/img/svg/bullet.svg"> The process of splitting data into shares and recombining them is governed by a strict protocol, ensuring secure data handling and storage.</li>
+                                    </ul>
+                                </li><br>
+                                <li class="tech-key"><em class="p-header-text">Blockchain Integration:</em>
+                                    <ul class="tech-list">
+                                        <li><img src="assets/img/svg/bullet.svg"> While the intensive processing tasks are handled off-chain, each step through the protocol is recorded on a shared blockchain.</li>
+                                        <li><img src="assets/img/svg/bullet.svg"> This blockchain integration ensures that every action taken on the filesystem is logged immutably, providing a reliable audit trail for the entire lifecycle of stored objects.</li>
+                                    </ul>
+                                </li><br>
+                                <li class="tech-key"><em class="p-header-text">Cloud-Based Design Environment Compatibility:</em><br>
+                                    <ul class="tech-list">
+                                        <li><img src="assets/img/svg/bullet.svg"> The filesystem is designed to be seamlessly integrated into cloud-based design environments, making it ideal for tracking electronic design files from conception.</li>
+                                        <li><img src="assets/img/svg/bullet.svg"> Whether attached via FUSE within a containerised environment like Kubernetes or through NFS supporting multiple users, the filesystem appears as a regular drive to the design sandbox, allowing for seamless integration with design tools.</li>
+                                    </ul>
+                                </li><br>
+                                <li class="tech-key"><em class="p-header-text">Security and Performance Configurations:</em><br>
+                                    <ul class="tech-list">
+                                        <li><img src="assets/img/svg/bullet.svg"> The FUSE attachment allows for a tight coupling with design tools, offering enhanced security at the cost of higher memory usage.</li>
+                                        <li><img src="assets/img/svg/bullet.svg"> The NFS option provides a more cost-effective solution by supporting many users per server instance while still maintaining a high level of provenance and security.</li>
+                                    </ul>
+                                </li><br>
+                                <li class="tech-key"><em class="p-header-text">Scalable and Efficient Storage:</em><br>
+                                        The filesystem is capable of handling both small source code files (in KBs) and larger design outputs (in GBs), with storage mechanisms that scale efficiently based on the type of data being stored.
+                                </li><br>
+                                <li class="tech-key"><em class="p-header-text">ACID Properties:</em><br>
+                                        Lockular's filesystem ensures atomicity, consistency, isolation, and durability (ACID properties), crucial for maintaining data integrity and preventing corruption.
+                                </li><br>
+                                <li class="tech-key"><em class="p-header-text">Built-in Redundancy and Security:</em><br>
+                                    <ul class="tech-list">
+                                        <li><img src="assets/img/svg/bullet.svg"> The use of Shamir's Secret Sharing inherently provides redundancy; only a threshold number of shares are needed to reconstruct the metadata or file blocks.</li>
+                                        <li><img src="assets/img/svg/bullet.svg"> Shares can be automatically replicated to protect against DDoS attacks and other forms of data disruption.</li>
+                                    </ul>
+                                </li><br>
+                                <li class="tech-key"><em class="p-header-text">Summary:</em><br>
+                                    Lockular's provenance tracking filesystem is a robust, secure, and flexible solution designed for environments where data security and traceability are paramount. By integrating advanced cryptographic techniques with blockchain technology, the filesystem provides an unprecedented level of security and provenance tracking, making it an essential component of supply chain provenance. This filesystem is particularly suited for industries like electronic design, where maintaining the integrity and traceability of design files is critical.
+                                </li>
+                            </ol>
+                        </div>
+
+                        <!-- 2 WAM  -->
+                        <div class="col-12 text-white faq" id="wam">
+                            <h3 class="p-header-text"> Workflow Actor Management (WAM) </h3>
+                            <p>The Workflow Actor Management (WAM) component is a crucial part of Lockular Limited's provenance suite, designed to manage and oversee the cooperative relationships among organisations involved in complex workflows, such as design and manufacturing processes. Here are the key points about WAM:</p>
+                            <h2 class="p-header-text"> Key Features of WAM:</h2>
+                            <ol style="list-style-type: decimal;">
+                                <li class="tech-key"><em class="p-header-text">Smart Contract Technology: </em> WAM utilises smart contracts to establish strict protocols that govern how organisations interact, collaborate, and exchange information. This ensures a structured and compliant interaction framework.</li><br>
+                                <li class="tech-key"><em class="p-header-text">Role and Permission Management: </em> Within each organization, WAM tracks the structure and positions of teams and individual actors. It allows for the assignment of specific roles and permissions to teams and their members, ensuring that only authorized personnel access sensitive information.</li><br>
+                                <li class="tech-key"><em class="p-header-text">Blockchain Integration: </em> The structure of organisational teams and their interactions are continually recorded on a blockchain, providing a transparent and immutable history of individuals involved and their relationships within the inter-organisational team structure.</li><br>
+                                <li class="tech-key"><em class="p-header-text">Provenance Tracking: </em> WAM ensures that provenance records related to the structure of collaborative teams are consistently maintained, offering a complete historical view of all parties involved in a design or part of a design.</li><br>
+                                <li class="tech-key"><em class="p-header-text">Domain Agnosticism: </em> The component is adaptable to various domains, with each set of organisational rules, roles, and permissions introduced through domain-specific smart contracts. These contracts drive the user experience, allowing admins to set up relationships and collaborations effectively.</li><br>
+                                <li class="tech-key"><em class="p-header-text">Enforcement and Tracking: </em> In scenarios like chip design, where geographic divisions and export restrictions dictate specific sharing rules, WAM encodes and enforces these rules through smart contracts. Each enactment of these rules is tracked on the blockchain, ensuring compliance and security.</li><br>
+                                <li class="tech-key"><em class="p-header-text">Integration with Other Components: </em> WAM works in conjunction with other components of Lockular's suite, such as the Lockular Provenance Tracking filesystem within the IDE sandbox. This integration helps track the evolution of designs at a granular level, from initial design through to manufacturing and software development.</li><br>
+                                <li class="tech-key"><em class="p-header-text">Security and Oversight: </em> By maintaining a detailed structure of inter-organisational teams, WAM can help detect unusual patterns or relationships that may indicate security breaches, such as espionage, especially in large teams.</li><br>
+                                <li class="tech-key"><em class="p-header-text"> Summary: </em> WAM provides a robust framework for managing the provenance of team structures involved in workflows, crucial for industries like chip design and manufacturing where precision, compliance, and security are paramount. By leveraging smart contracts and blockchain technology, WAM ensures that all interactions and roles within collaborative projects are governed by clear, enforceable rules and that a comprehensive, immutable record of these interactions is maintained. This not only enhances security and compliance but also supports effective management and oversight of complex organisational relationships </li>
+                            </ol>
+                       </div>
+
+                         <!-- 3  Theia.Cloud (Cloud Native)  -->
 
                         <div class="col-12 text-white faq" id="secure-working">
-                           <h3 class="p-header-text"> Secure Working (Cloud Native) </h3>
+                           <h3 class="p-header-text"> Theia.Cloud (Cloud Native) </h3>
                            <p>SecureWorking is a highly scalable, cloud-based Integrated Development Environment (IDE) that is a product of collaboration between Lockular, EclipseSource, Ericsson, and STMicroelectronics. This open-source environment leverages Kubernetes to efficiently scale across thousands of user environments, making it a robust solution for various design needs.</p>
                            <h2 class="p-header-text" style="margin-bottom:20px">Key Features of SecureWorking IDE:</h2>
                            <ol style="list-style-type: decimal;">
@@ -113,11 +187,11 @@
                            
                         </div>
 
-                        <!--  2  NFT Marketplace  -->
+                        <!--  4  NFT Marketplace  -->
                         
                         <div class="col-12 text-white faq" id="nft-marketplace">
                             <h3 class="p-header-text"> NFT Marketplace </h3>
-                            <p>The Lockular NFT Marketplace Platform is an innovative solution designed to track and manage both real-world objects and electronic design artifacts through the use of Non-Fungible Tokens (NFTs). This platform is integral to Lockular's suite of supply chain provenance tools, providing a robust mechanism for the authentication, authorisation, and transaction of assets.</p>
+                            <p>The Lockular NFT Marketplace Platform is an innovative solution designed to track and manage both real-world objects and electronic design artifacts through the use of Non-Fungible Tokens (NFTs). This platform is integral to Lockular's suite of provenance tools, providing a robust mechanism for the authentication, authorisation, and transaction of assets.</p>
                             <h2 class="p-header-text" style="margin-bottom:20px">  Key Features of the Lockular NFT Marketplace Platform:</h2>
                             <ol style="list-style-type: decimal;">
                                 <li class="tech-key"><em class="p-header-text">Tracking Real-World and Electronic Artifacts:</em><br>
@@ -140,7 +214,7 @@
                                 </li><br>
                                 <li class="tech-key"><em class="p-header-text">Web3 Technology and Wallet Integration:</em><br>
                                     <ul class="tech-list">
-                                        <li><img src="assets/img/svg/bullet.svg"> All components of Lockular's supply chain provenance suite, including the NFT Marketplace, are based on Web3 technologies.</li>
+                                        <li><img src="assets/img/svg/bullet.svg"> All components of Lockular's provenance suite, including the NFT Marketplace, are based on Web3 technologies.</li>
                                         <li><img src="assets/img/svg/bullet.svg"> The Polkadot.js wallet is central to the platform, handling authentication and authorization. When users log into SecureWorking, the same wallet is used to interact with the NFT Marketplace, ensuring a unified and secure user experience.</li>
                                         <li><img src="assets/img/svg/bullet.svg"> The wallet's roles and responsibilities are crucial in governing interactions within the NFT Marketplace, ensuring that transactions adhere to predefined rules and permissions.</li>
                                     </ul>
@@ -159,85 +233,11 @@
                             </ol>
                         </div>
 
-                        <!-- 3 WAM  -->
-                        <div class="col-12 text-white faq" id="wam">
-                             <h3 class="p-header-text"> Workflow Actor Management (WAM) </h3>
-                             <p>The Workflow Actor Management (WAM) component is a crucial part of Lockular Limited's supply chain provenance suite, designed to manage and oversee the cooperative relationships among organisations involved in complex workflows, such as design and manufacturing processes. Here are the key points about WAM:</p>
-                             <h2 class="p-header-text"> Key Features of WAM:</h2>
-                             <ol style="list-style-type: decimal;">
-                                 <li class="tech-key"><em class="p-header-text">Smart Contract Technology: </em> WAM utilises smart contracts to establish strict protocols that govern how organisations interact, collaborate, and exchange information. This ensures a structured and compliant interaction framework.</li><br>
-                                 <li class="tech-key"><em class="p-header-text">Role and Permission Management: </em> Within each organization, WAM tracks the structure and positions of teams and individual actors. It allows for the assignment of specific roles and permissions to teams and their members, ensuring that only authorized personnel access sensitive information.</li><br>
-                                 <li class="tech-key"><em class="p-header-text">Blockchain Integration: </em> The structure of organisational teams and their interactions are continually recorded on a blockchain, providing a transparent and immutable history of individuals involved and their relationships within the inter-organisational team structure.</li><br>
-                                 <li class="tech-key"><em class="p-header-text">Provenance Tracking: </em> WAM ensures that provenance records related to the structure of collaborative teams are consistently maintained, offering a complete historical view of all parties involved in a design or part of a design.</li><br>
-                                 <li class="tech-key"><em class="p-header-text">Domain Agnosticism: </em> The component is adaptable to various domains, with each set of organisational rules, roles, and permissions introduced through domain-specific smart contracts. These contracts drive the user experience, allowing admins to set up relationships and collaborations effectively.</li><br>
-                                 <li class="tech-key"><em class="p-header-text">Enforcement and Tracking: </em> In scenarios like chip design, where geographic divisions and export restrictions dictate specific sharing rules, WAM encodes and enforces these rules through smart contracts. Each enactment of these rules is tracked on the blockchain, ensuring compliance and security.</li><br>
-                                 <li class="tech-key"><em class="p-header-text">Integration with Other Components: </em> WAM works in conjunction with other components of Lockular's suite, such as the Lockular Provenance Tracking filesystem within the IDE sandbox. This integration helps track the evolution of designs at a granular level, from initial design through to manufacturing and software development.</li><br>
-                                 <li class="tech-key"><em class="p-header-text">Security and Oversight: </em> By maintaining a detailed structure of inter-organisational teams, WAM can help detect unusual patterns or relationships that may indicate security breaches, such as espionage, especially in large teams.</li><br>
-                                 <li class="tech-key"><em class="p-header-text"> Summary: </em> WAM provides a robust framework for managing the provenance of team structures involved in workflows, crucial for industries like chip design and manufacturing where precision, compliance, and security are paramount. By leveraging smart contracts and blockchain technology, WAM ensures that all interactions and roles within collaborative projects are governed by clear, enforceable rules and that a comprehensive, immutable record of these interactions is maintained. This not only enhances security and compliance but also supports effective management and oversight of complex organisational relationships </li>
-                             </ol>
-                        </div>
-
-                        <!--  4 Provenance Tracking Filesystem  -->
-                        <div class="col-12 text-white faq" id="provenance">
-                            <h3 class="p-header-text"> Secure Filesystem featuring Provenance Reporting</h3>
-
-                            <p>Lockular's provenance tracking filesystem is a sophisticated component of the supply chain provenance suite, designed to ensure the security and traceability of files throughout their lifecycle.</p>
-                            
-                            <h2 class="p-header-text">Key Features of Lockular's Provenance Tracking Filesystem:</h2>
-                            <ol style="list-style-type: decimal;">
-                                <li class="tech-key"><em class="p-header-text">POSIX Compliance and Attachment Options:</em><br>
-                                    <ul class="tech-list">
-                                        <li><img src="assets/img/svg/bullet.svg"> The filesystem conforms to the POSIX standard, ensuring compatibility with standard interfaces and behaviours.</li>
-                                        <li><img src="assets/img/svg/bullet.svg"> It can be attached using FUSE (Filesystem in Userspace) or NFS (Network File System), providing flexibility in deployment and integration with various environments.</li>
-                                    </ul>
-                                </li><br>
-                                <li class="tech-key"><em class="p-header-text">Shamir's Secret Sharing:</em>
-                                    <ul class="tech-list">
-                                        <li><img src="assets/img/svg/bullet.svg"> Filesystem metadata and blocks are broken into shares using Shamir's Secret Sharing, a cryptographic method that enhances security by distributing data across multiple locations.</li>
-                                        <li><img src="assets/img/svg/bullet.svg"> The process of splitting data into shares and recombining them is governed by a strict protocol, ensuring secure data handling and storage.</li>
-                                    </ul>
-                                </li><br>
-                                <li class="tech-key"><em class="p-header-text">Blockchain Integration:</em>
-                                    <ul class="tech-list">
-                                        <li><img src="assets/img/svg/bullet.svg"> While the intensive processing tasks are handled off-chain, each step through the protocol is recorded on a shared blockchain.</li>
-                                        <li><img src="assets/img/svg/bullet.svg"> This blockchain integration ensures that every action taken on the filesystem is logged immutably, providing a reliable audit trail for the entire lifecycle of stored objects.</li>
-                                    </ul>
-                                </li><br>
-                                <li class="tech-key"><em class="p-header-text">Cloud-Based Design Environment Compatibility:</em><br>
-                                    <ul class="tech-list">
-                                        <li><img src="assets/img/svg/bullet.svg"> The filesystem is designed to be seamlessly integrated into cloud-based design environments, making it ideal for tracking electronic design files from conception.</li>
-                                        <li><img src="assets/img/svg/bullet.svg"> Whether attached via FUSE within a containerised environment like Kubernetes or through NFS supporting multiple users, the filesystem appears as a regular drive to the design sandbox, allowing for seamless integration with design tools.</li>
-                                    </ul>
-                                </li><br>
-                                <li class="tech-key"><em class="p-header-text">Security and Performance Configurations:</em><br>
-                                    <ul class="tech-list">
-                                        <li><img src="assets/img/svg/bullet.svg"> The FUSE attachment allows for a tight coupling with design tools, offering enhanced security at the cost of higher memory usage.</li>
-                                        <li><img src="assets/img/svg/bullet.svg"> The NFS option provides a more cost-effective solution by supporting many users per server instance while still maintaining a high level of provenance and security.</li>
-                                    </ul>
-                                </li><br>
-                                <li class="tech-key"><em class="p-header-text">Scalable and Efficient Storage:</em><br>
-                                        The filesystem is capable of handling both small source code files (in KBs) and larger design outputs (in GBs), with storage mechanisms that scale efficiently based on the type of data being stored.
-                                </li><br>
-                                <li class="tech-key"><em class="p-header-text">ACID Properties:</em><br>
-                                        Lockular's filesystem ensures atomicity, consistency, isolation, and durability (ACID properties), crucial for maintaining data integrity and preventing corruption.
-                                </li><br>
-                                <li class="tech-key"><em class="p-header-text">Built-in Redundancy and Security:</em><br>
-                                    <ul class="tech-list">
-                                        <li><img src="assets/img/svg/bullet.svg"> The use of Shamir's Secret Sharing inherently provides redundancy; only a threshold number of shares are needed to reconstruct the metadata or file blocks.</li>
-                                        <li><img src="assets/img/svg/bullet.svg"> Shares can be automatically replicated to protect against DDoS attacks and other forms of data disruption.</li>
-                                    </ul>
-                                </li><br>
-                                <li class="tech-key"><em class="p-header-text">Summary:</em><br>
-                                    Lockular's provenance tracking filesystem is a robust, secure, and flexible solution designed for environments where data security and traceability are paramount. By integrating advanced cryptographic techniques with blockchain technology, the filesystem provides an unprecedented level of security and provenance tracking, making it an essential component of Lockular's supply chain provenance suite. This filesystem is particularly suited for industries like electronic design, where maintaining the integrity and traceability of design files is critical.
-                                </li>
-                            </ol>
-                        </div>
-
                         <!--  5  Secure  Artifact Store (Cloud Native)  -->
                         <div class="col-12 text-white faq" id="secure-artifact">
                              <h3 class="p-header-text"> Secure Artifact Store </h3>
                              <p>Lockular's Secure Artifact Store is a specialised component designed to enhance the management and curation of artifacts across various NFT Marketplaces.</p>
-                             <p>This component is an integral part of Lockular's supply chain provenance suite, although it is specifically tailored to work with digital artifacts within the NFT ecosystem.</p>
+                             <p>This component is an integral part of Lockular's provenance suite, although it is specifically tailored to work with digital artifacts within the NFT ecosystem.</p>
                              
                              <h2 class="p-header-text"> Key Features of Lockular's Secure Artifact Store:</h2>
                              <ol style="list-style-type: decimal;">
@@ -289,7 +289,7 @@
                     <ul>
                         
                         <li>
-                            <a href="products.html" class="footer-items"> Supply Chain Suite</a>
+                            <a href="products.html" class="footer-items"> Provenance Suite</a>
                         </li>
                         <li>
                             <a href="technical_info.html" class="footer-items">Technical Info</a>
