@@ -85,12 +85,28 @@
                                         font-size: 28px;
                                         line-height: 1.2;
                                     }
+                                    .problem-box {
+                                        border: 2px solid orange; /* Orange border */
+                                        padding: 20px; /* Padding inside the box */
+                                        position: relative; /* Needed for absolute positioning of the label */
+                                        margin-top: 20px; /* Space above the box */
+                                    }
+                                    .problem-box::before {
+                                        content: "Problem"; /* Text for the label */
+                                        background-color: black; /* Background of the label */
+                                        color: orange; /* Color of the text */
+                                        font-weight: bold; /* Make the text bold */
+                                        position: absolute; /* Absolute positioning relative to the box */
+                                        top: -14px; /* Positioning the label on top border */
+                                        left: 20px; /* Distance from the left side */
+                                        padding: 0 10px; /* Padding inside the label */
+                                    }
                                 </style>
                                 <div class="content-body">
                                     <div class="content-body-main">                                     
                                             <p class="variant1">Lockular excels in developing systems that provide undeniable proof of the history and integrity of both physical and electronic products from their origin to the end-user</p>
-                                            <p class="variant1">Our expertise in provenance tracking empowers businesses to verify and oversee the custody of their products and creations, enhancing transparency and building trust across their supply chains, while significantly reducing the risk of fraud</p>                                
-                                            <p class="variant1" style="color: orange;">Problems<br>Is it real? Is it Fake? Was it made by a human?<br> What parts of the design involved the recently identified bad actor?<br>Did I really agree to that?</p>                            
+                                            <p class="variant1">Our expertise in trustless provenance tracking empowers businesses to verify and oversee the custody of their products and creations, enhancing transparency and building trust across their supply chains, while significantly reducing the risk of fraud</p>                                
+                                            <p class="variant1 problem-box" style="color: orange;">Is it real? Is it Fake? Was it made by a human?<br> What parts of the design involved the recently identified bad actor?<br>Did I really sanction that?</p>                            
                                             <p class="variant2">
                                                 Irrefutable Provenance tracking is made possible by two cornerstone Lockular products
                                                 <div class="product-description">
