@@ -72,74 +72,58 @@
                                         margin-bottom: 20px; /* Variant 2 margin */
                                     }
                                     .product-description {
-                                        background-color: #f4f4f4; /* Light grey background */
+                                        background-color: #323232; /* Light grey background */
                                         padding: 20px;
                                         border-radius: 8px;
                                         margin: 20px;
                                     }
                                     .product-description h2 {
-                                        color: #333; /* Dark grey color for the heading */
+                                        color: white; /* Dark grey color for the heading */
                                     }
                                     .product-description p {
-                                        color: #666; /* Medium grey color for the text */
+                                        color: white; /* Medium grey color for the text */
                                         font-size: 28px;
                                         line-height: 1.2;
-                                    }
-                                    .problem-box {
-                                        border: 2px solid orange; /* Orange border */
-                                        padding: 20px; /* Padding inside the box */
-                                        position: relative; /* Needed for absolute positioning of the label */
-                                        margin-top: 20px; /* Space above the box */
-                                    }
-                                    .problem-box::before {
-                                        content: "Common issues related to origin"; /* Text for the label */
-                                        background-color: black; /* Background of the label */
-                                        color: orange; /* Color of the text */
-                                        font-weight: bold; /* Make the text bold */
-                                        position: absolute; /* Absolute positioning relative to the box */
-                                        top: -14px; /* Positioning the label on top border */
-                                        left: 20px; /* Distance from the left side */
-                                        padding: 0 10px; /* Padding inside the label */
-                                    }
-                                    .key-facts-box {
-                                        border: 2px solid orange; /* Orange border */
-                                        padding: 20px; /* Padding inside the box */
-                                        margin-top: 20px; /* Space above the box */
-                                        background-color: black; /* White background */
-                                    }
-                                    .key-facts-box h2 {
-                                        color: orange; /* Orange color for the title */
                                     }
                                 </style>
                                 <div class="content-body">
                                     <div class="content-body-main">                                     
-                                            <p class="variant2">Lockular excels in developing systems that provide undeniable proof of the history and integrity of both physical and electronic products from their origin to the end-user</p>
-                                            <p class="variant1">Our expertise in trustless provenance tracking empowers businesses to verify and oversee the custody of their products and creations, enhancing transparency and building trust across their supply chains, while significantly reducing the risk of fraud</p>                                
-                                            <p class="variant1 problem-box" style="color: orange;">Is it real? Is it Fake? Was it made by a human?
-                                                <br> Where do the components in my bill of materials come from?<br>
-                                                Which design elements were associated with the recently identified malicious entity?
-                                                <br>Did I really sanction that use of my data?</p>                            
+                                            <p class="variant2">Lockular excels in developing systems that provide undeniable proof of the history and integrity of both physical and electronic products from their origin to the end-user.</p>
+                                            <p class="variant1">Our expertise in trustless provenance tracking empowers businesses to verify and oversee the custody of their products and creations, enhancing transparency and building trust across their supply chains, while significantly reducing the risk of fraud.</p>                                
+                                            <p style="color: orange;">Real problems that are related to the origins of things include</p>
+                                            <div class="product-description">
+                                                <div style="display: flex; align-items: center;">
+                                                    <p style="color: orange; flex: 1;">Is it Real? Is it Fake? Was it made by a Human?
+                                                        <br> Where do the components in my bill of materials come from?<br>
+                                                        Which design elements were associated with the recently identified malicious entity?
+                                                        <br>Did I really sanction that use of my data?
+                                                    </p>
+                                                    <img src="assets/img/trump_false_index.png" style="width: 280px; height: auto; margin-left: 20px;" alt="Descriptive Alt Text">
+                                                </div>
+                                            </div>
+                                            <br><br>                  
                                             <p class="variant2">
-                                                Two key Lockular products can handle much of the work in a solution that requires provenance tracking
+                                                Much of the heavy lifting in a solution that requires provenance tracking can be realised using just two core Lockular components
                                                 <div class="product-description">
                                                     <h2>Provenance Tracking Filesystem</h2>
-                                                    <p>This blockchain-native filesystem is essential for organisations that require guaranteed integrity and comprehensive lifecycle tracking of their application data. 
-                                                        Designed to be NFS compatible, it integrates effortlessly into various application environments as an additional drive. Once deployed,
-                                                        it intrinsically monitors and records every aspect of data lifecycle, providing robust provenance tracking that is straightforward to implement and manage</p>
+                                                    <img src="assets/img/svg/secure-filesystem.svg" style="float: left; margin-right: 20px; width: 120px; height: auto;" />
+                                                    <p>This blockchain-native filesystem for organisations that require guaranteed integrity and immutable lifecycle tracking of their application data. 
+                                                        NFS compatible, it integrates effortlessly into various application environments as an additional drive. Once deployed,
+                                                        it intrinsically monitors and records every aspect of data lifecycle, providing robust provenance tracking.</p>
                                                 </div>
                                                 <div class="product-description">
                                                     <h2>Workflow Actor Management</h2>
+                                                    <img src="assets/img/svg/smart-contract.svg" style="float: left; margin-right: 20px; width: 120px; height: auto;" />
                                                     <p>For industries requiring stringent knowledge of the teams that wrangle their data, this tool leverages smart contracts to maintain indisputable records of team 
-                                                        structures and permissions across cooperating organisations. This approach ensures military-grade security and provides unparalleled 
-                                                        accountability, enabling precise irrefutable tracking and verification of team structures at any point in time</p>
+                                                        structures and permissions across cooperating organisations. This approach provides unparalleled 
+                                                        accountability, enabling precise irrefutable tracking and verification of team structures at any point in time.</p>
                                                 </div>
+                                                <p>Together, they ensure comprehensive traceability of project outputs and a detailed record of all individuals or bots involved at every stage.</p>
                                             </p>
-
-                                            <p class="variant2" style="margin-top:80px;">Irrefutable and trustless provenance tracking is made possible by these two cornerstone Lockular products:
-                                                together, they ensure comprehensive traceability of project outputs and a detailed record of all individuals or bots involved at every stage</p>
                                         </span>
+                                        <br><br>
                                         <div class="additional-info">
-                                            <p>Be sure to check out our <a href="faq.html">provenance</a></p>
+                                            <p>Be sure to check out Lockular's <a href="faq.html">provenance</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +279,7 @@
                                 <div class="content-body">
                                     <span class="slide-info">
                                         <p>This is the code name for a forthcoming &quot;direct to market&quot; pluggable &quot;provenance tracking filesystem&quot; service</p>
-                                        <div class="key-facts-box">
+                                        <div>
                                             <h2>Key Points</h2>
                                             <p>Registration will require a Web3 wallet</p>
                                             <p>Access will be exclusive to you and your invited guests</p>
