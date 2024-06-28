@@ -92,6 +92,13 @@
                                         float: left;
                                         margin-right: 1em; /* Margin scaled to font size */
                                     }
+                                    /* Add media query for mobile devices */
+                                    @media (max-width: 768px) {
+                                        .product-description img {
+                                            max-width: 5em; /* Smaller max-width for mobile */
+                                            width: 50%; /* Reduce width to 50% on mobile */
+                                        }
+                                    }
                                 </style>
                                 <div class="content-body">
                                     <div class="content-body-main">                                     
@@ -107,7 +114,7 @@
                                                         <li>- Consequences of a bad actor?</li>
                                                         <li>- Did I really sanction that use of my data?</li>
                                                     </ul>
-                                                    <img src="assets/img/trump_false_index.png" style="max-width: 10em; filter: brightness(60%);" alt="">
+                                                    <!--img src="assets/img/trump_false_index.png" style="height: auto; filter: brightness(60%);" alt=""-->
                                                 </div>
                                             </div>
                                             <br><br>                  
@@ -150,6 +157,7 @@
                         <div class="slide-content">
                             <div>
                                 <div class="title-text">
+                                    <img src="assets/img/logos/SVG/codasip.svg" style="height: 1.5em; vertical-align: middle; background-color: white; margin-right: 10px;" alt="Codasip Logo">
                                     <div> Silicon Chip Design for Codasip </div> <span style="font-weight: 600; margin-left:10px">Use Case</span>
                                 </div>
                                 <div class="content-body">
