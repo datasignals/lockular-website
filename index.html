@@ -210,38 +210,58 @@
                     <li class="slide">
                         <a href="#" class="action">
                             <div class="title-container">
-                                <div class="title">Materials and Metals
-                                    <span style="margin-left:10px; font-weight: 500;">  Use Case </span></div>
+                                <div class="title">Attest to Carbon Savings
+                                    <span style="margin-left:10px; font-weight: 500;">  IoT Use Case </span></div>
                             </div>
                         </a>
                         <div class="slide-content">
                             <div>
                                 <div class="title-text">
-                                    <div> Materials and Metals </div> <span style="font-weight: 600; margin-left:10px">Use Case</span>
+                                    <img src="assets/img/logos/sabien-logo.png" style="height: 1.5em; vertical-align: middle; background-color: white; margin-right: 10px;" alt="Codasip Logo">
+                                    <div> Attest to Carbon Savings </div> <span style="font-weight: 600; margin-left:10px">IoT Use Case</span>
                                 </div>
                                 <div class="content-body">
                                     <span class="slide-info">
                                         <p>
-                                            Lockular's Provenance suite has been expertly customised for the specialised area of Material Design, specifically for a prominent US Metals and Alloys Company. This use case integrates essential elements from the Lockular Provenance suite:
-                                            Provenance Tracking Filesystem, Workflow Actor Management (WAM), and Theia.Cloud, focusing on the design, specification, and estimation of metals and alloys. Looking ahead, it is anticipated that a network of suppliers and customers will
-                                            develop around an NFT Marketplace, where individual sheets of material are tracked as NFTs.</p>
-
-                                        <p> <span class="content-body-highlight"> Provenance Tracking Filesystem</span> 
-                                                All design activities within Theia.Cloud, including the detailed specifications of metals and alloys and their processing methods, are consistently monitored and logged on a dedicated blockchain through the use of Lockular's Provenance Tracking filesystem.
-                                                This blockchain-based system maintains an unalterable record of all design activities, modifications, and access, greatly enhancing the security and traceability of the material design process.
-                                                This high level of detailed tracking is vital for safeguarding intellectual property and maintaining the integrity of the design process in the competitive field of material design.
-                                                Provenance records and reporting are crucial for upholding industry standards and compliance. </p>    
+                                            The two primary elements of Lockular's Provenance suite, the Provenance Tracking Filesystem and Workflow Actor Management (WAM), were deployed to securely gather,
+                                            document, and analyze telemetry data from industrial boilers. This application supported the carbon savings claims of Sabien PLC, a UK-based manufacturer of
+                                            energy-saving IoT devices. This use case effectively incorporates these key components from the Lockular Provenance suite.</p>
+                                            <div style="text-align: left;">
+                                                <img src="assets/img/svg/secure-filesystem.svg" alt="First Icon" style="width: 50px; height: auto;">
+                                                <span style="font-size: 24px; margin: 0 10px;">+</span>
+                                                <img src="assets/img/svg/smart-contract.svg" alt="Second Icon" style="width: 50px; height: auto;">
+                                            </div>
+                                            <br><br>
+                                        <p> <span class="content-body-highlight"> The Provenance Tracking Filesystem</span> is installed on the IoT device to directly collect time-series telemetry data 
+                                            rom industrial boilers. This filesystem, which is native to blockchain and equipped with an NFS adapter, securely fragments and transmits the data to multiple
+                                            cloud silos, adhering to a stringent blockchain-controlled protocol. Regular analyses of the telemetry data are conducted under blockchain supervision,
+                                            enabling the assessment of carbon savings on a daily, weekly, monthly, and yearly basis.
+                                                 </p>    
                                         
                                         <p> <span class="content-body-highlight"> Workflow Actor Management</span>
-                                            Within the realm of material design, WAM is crucial for orchestrating and defining the interactions among various stakeholders involved in the design and specification of metals and alloys.
-                                            By employing smart contract technology, WAM imposes strict protocols that dictate how these parties collaborate and exchange vital information on material composition and estimates.
-                                            This methodical approach guarantees stringent compliance and accuracy throughout the design process. ITAR and CMMC are important here as many of the requirements come from the US defense and spaces industries. </p>
+                                            operates the smart contract that administers the role-based access control (RBAC). This system governs access for IoT devices, the analytical bots, and Sabien
+                                            clients (humans), all managed by WAM. Provenance reports can be generated at any time for each device, detailing the participants and activities involved in the data lifecycle,
+                                            ensuring that carbon savings claims are accurately recorded without duplication.
+                                            </p>
+
+                                        <p> <span class="content-body-highlight"> The solution delivered the following advantages</span>: It ensured full transparency and traceability of detected carbon savings,
+                                            which were immutably recorded and used in subsequent calculations for carbon credit claims. Additionally, the calculation steps were recorded on the blockchain.
+                                                </p>
+
+                                        <p>An explorer dashboard that slices and dices carbon savings by installation and site is provided for human feedback. Again access is tracked.</p>
+                                        <br><br>
+                                        <style>
+                                            .image-mount {
+                                                background-color: #323232; /* Light gray background */
+                                                padding: 50px; /* Padding around the image */
+                                                border-radius: 10px; /* Rounded corners for the mount */
+                                                box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+                                            }
+                                        </style>
+                                        <div class="image-mount">
+                                            <img src="assets/img/dashboard.png" alt="Sabien Dashboard" style="max-width: 100%; height: auto;">
+                                        </div>
                                         
-                                        <p>  <span class="content-body-highlight">Theia.Cloud</span>
-                                            offers designers a cloud-based Integrated Development Environment (IDE) containing the client's own specialised design tools. This includes a proprietary estimator tool that works with CAD input
-                                            drawings to determine material requirements and enhance cutting strategies. The cloud environment is securely isolated and supported by the Lockular Provenance Tracking filesystem, ensuring comprehensive
-                                            tracking and security of all activities and data within the environment. Access is tightly controlled by company-specific smart contracts overseen by WAM, ensuring that only authorised personnel can access these essential tools and data. </p>
-                                                                            </span>
                                 </div>
                                 <button type="button" class="content-button"><a href="products.html">The Provenance Suite</a></button>
                             </div>
