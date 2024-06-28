@@ -62,7 +62,7 @@
                                 </div>
                                 <style>
                                     .content-body p, .content-body ul.disc-class li {
-                                        font-size: 28px; /* Increase font size */
+                                        /*font-size: 28px;*/ /* Increase font size */
                                         line-height: 1.2;
                                     }
                                     .variant1 {
@@ -76,14 +76,21 @@
                                         padding: 20px;
                                         border-radius: 8px;
                                         margin: 20px;
+                                        box-sizing: border-box; 
                                     }
                                     .product-description h2 {
                                         color: white; /* Dark grey color for the heading */
                                     }
                                     .product-description p {
                                         color: white; /* Medium grey color for the text */
-                                        font-size: 28px;
+                                        /*font-size: 28px; */
                                         line-height: 1.2;
+                                    }
+                                    .product-description img {
+                                        max-width: 3em; /* Scale width relative to font size */
+                                        height: auto; /* Maintain the aspect ratio */
+                                        float: left;
+                                        margin-right: 1em; /* Margin scaled to font size */
                                     }
                                 </style>
                                 <div class="content-body">
@@ -93,12 +100,14 @@
                                             <p style="color: orange;">Real problems that are related to the origins of things include</p>
                                             <div class="product-description">
                                                 <div style="display: flex; align-items: center;">
-                                                    <p style="color: orange; flex: 1;">Is it Real? Is it Fake? Was it made by a Human?
-                                                        <br> Where do the components in my bill of materials come from?<br>
-                                                        Which design elements were associated with the recently identified malicious entity?
-                                                        <br>Did I really sanction that use of my data?
+                                                    <p style="color: orange; flex: 1;">
+                                                        Is it Real? Is it Fake?<br>
+                                                        Was it made by a Human?<br>
+                                                        Bill of materials origins?<br>
+                                                        Consequences of a bad actor?<br>
+                                                        Did I really sanction that use of my data?
                                                     </p>
-                                                    <img src="assets/img/trump_false_index.png" style="width: 200px; height: auto; margin-left: 20px; filter: brightness(60%);" alt="">
+                                                    <img src="assets/img/trump_false_index.png" style="max-width: 10em; filter: brightness(60%);" alt="">
                                                 </div>
                                             </div>
                                             <br><br>                  
@@ -106,7 +115,7 @@
                                                 Much of the heavy lifting in a solution that requires provenance tracking can be realised using just two core Lockular components
                                                 <div class="product-description">
                                                     <h2>Provenance Tracking Filesystem</h2>
-                                                    <img src="assets/img/svg/secure-filesystem.svg" style="float: left; margin-right: 20px; width: 120px; height: auto;" />
+                                                    <img src="assets/img/svg/secure-filesystem.svg"/>
                                                     <p>This blockchain-native filesystem for organisations that require guaranteed integrity and immutable lifecycle tracking of their application data. 
                                                         NFS compatible, it integrates effortlessly into various application environments as an additional drive. Once deployed,
                                                         it intrinsically monitors and records every aspect of data lifecycle, providing robust provenance tracking.</p>
