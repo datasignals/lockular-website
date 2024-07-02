@@ -20,8 +20,8 @@
 }
 .t-spec p{
     font-size: 18px;
-    margin-top: 30px;
-    line-height: 24px;
+    margin-top: 5px;
+    line-height: 1.2;
 }
 .t-tech-spec-card h5{
     color: #F09937;
@@ -29,7 +29,7 @@
 }
 .t-tech-spec-card div{
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.2;
 }
 .t-libraries{
     padding: 50px;
