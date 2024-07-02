@@ -19,16 +19,16 @@
     font-weight: 500;
 }
 .t-spec p{
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 30px;
     line-height: 24px;
 }
 .t-tech-spec-card h5{
     color: #F09937;
-    font-size: 14px;
+    font-size: 18px;
 }
 .t-tech-spec-card div{
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
 }
 .t-libraries{
@@ -38,7 +38,7 @@
 }
 .t-libraries ul li{
     color: #F09937;
-    font-size: 14px;
+    font-size: 18px;
     padding: 10px 0;
 }
 .provenance-height{
